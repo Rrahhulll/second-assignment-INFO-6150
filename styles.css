@@ -479,14 +479,18 @@ ul {
   .header {
     position: relative;
     flex-direction: column;
-
+    padding: 20px auto;
+    top: 0;
+    left: 0;
+    margin: auto;
   }
 
   .navbar {
     display: flex;
     flex-direction: column;
-    width: 100%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
   }
 
@@ -494,6 +498,8 @@ ul {
     padding: 5px;
     font-size: 18px;
     border-bottom: 1px solid #ddd;
+    margin: auto;
+    width: 100%;
   }
 
   .home {
