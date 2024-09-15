@@ -553,6 +553,7 @@ ul {
   .about_img {
     max-width: 90%;
     padding: 5% 0;
+    border-radius: 5px;
   }
   .btn-box a {
     width: 80%;
@@ -689,6 +690,9 @@ ul {
   .home-sci a {
     width: 35px;
     height: 35px;
+  }
+  .about_img{
+    border-radius: 5px;
   }
   .about_heading{
     font-size: 10px;
