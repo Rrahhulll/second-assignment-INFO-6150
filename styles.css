@@ -496,7 +496,9 @@ ul {
     font-size: 18px;
     border-bottom: 1px solid #ddd;
   }
-
+  .main{
+    height: 90vh;
+  }
   .home {
     text-align: center;
     display: flex;
