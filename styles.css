@@ -230,8 +230,12 @@ body {
 .about_box p {
   font-size: 14px;
 }
+.about_heading{
+  font-size: 16px;
+}
 
 .services-section {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,6 +512,12 @@ ul {
     margin: 2% auto;
     gap: 10px;
   }
+  .home-sci {
+    bottom: 1px;
+  }
+  .about_heading{
+    font-size: 12px;
+  }
   .about-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -539,6 +549,11 @@ ul {
   .about2 h3 {
     font-size: 13.5px;
   }
+  .about_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .about_box p {
     font-size: 11px;
   }
@@ -564,7 +579,6 @@ ul {
 
   .section_title {
     font-size: 28px;
-    margin-top: 2rem;
   }
 
   .services_container {
@@ -657,10 +671,14 @@ ul {
     margin: auto;
     left: 0;
     right: 0;
+    bottom: 60px;
   }
   .home-sci a {
     width: 35px;
     height: 35px;
+  }
+  .about_heading{
+    font-size: 10px;
   }
   .about-title {
     font-size: 16px;
