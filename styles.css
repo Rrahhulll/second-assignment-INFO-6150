@@ -204,6 +204,7 @@ body {
   height: 62vh;
   border-radius: 0.75rem;
   justify-self: center;
+  border-radius: 10px;
 }
 .about1 {
   display: flex;
