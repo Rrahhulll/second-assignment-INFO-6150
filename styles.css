@@ -261,6 +261,10 @@ body {
   color: white;
   padding: 1% 10%;
 }
+.portfolio_title{
+  font-size: 32px;
+margin: 5% auto;
+}
 
 .services_container {
   display: flex;
