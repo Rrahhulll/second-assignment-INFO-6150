@@ -720,6 +720,10 @@ ul {
     margin-bottom: 30px;
 
   }
+  .wrapper{
+      border: none;
+
+  }
   .contact-container {
     width: 90%;
   }
