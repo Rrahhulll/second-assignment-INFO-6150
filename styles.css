@@ -13,18 +13,7 @@ body {
   background: black;
   color: white;
 }
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 100;
-}
+
 .logo {
   position: relative;
   font-size: 25px;
@@ -43,6 +32,18 @@ body {
   background: black;
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
 }
 .navbar a {
   font-size: 18px;
@@ -215,6 +216,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  float: right;
 }
 .about2 h3 {
   font-weight: 500;
@@ -230,8 +232,11 @@ body {
 .about_box p {
   font-size: 14px;
 }
-.about_heading{
+.about_heading {
   font-size: 16px;
+}
+.details {
+  font-size: 18px;
 }
 
 .services-section {
@@ -262,9 +267,9 @@ body {
   color: white;
   padding: 1% 10%;
 }
-.portfolio_title{
+.portfolio_title {
   font-size: 32px;
-margin: 5% auto;
+  margin: 5% auto;
 }
 
 .services_container {
@@ -353,6 +358,39 @@ margin: 5% auto;
   align-items: stretch;
   gap: 15px;
 }
+.contact-right {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-right table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.contact-right th,
+.contact-right td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: white;
+}
+
+.contact-right th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
 
 .contact-inputs {
   width: 95%;
@@ -383,6 +421,32 @@ textarea {
 .submit img {
   width: 14px;
   height: auto;
+}
+.audio-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #333;
+  color: #fff;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider {
+  background-color: #444;
+  border-radius: 5px;
 }
 
 .contact-left h2 {
@@ -480,10 +544,8 @@ ul {
   .header {
     position: relative;
     flex-direction: column;
-    padding: 20px auto;
-    top: 0;
-    left: 0;
-    margin: auto;
+    float: left;
+    display: inline-block;
   }
 
   .navbar {
@@ -492,7 +554,7 @@ ul {
     text-align: center;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
   }
 
   .navbar a {
@@ -501,16 +563,17 @@ ul {
     border-bottom: 1px solid #ddd;
     margin: auto;
     width: 100%;
+    text-align: center;
+    margin: 0;
   }
 
   .home {
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 65vh;
+    height: 63vh;
   }
-  .home-sci
-  {
+  .home-sci {
     display: none;
   }
 
@@ -530,7 +593,7 @@ ul {
     gap: 10px;
   }
 
-  .about_heading{
+  .about_heading {
     font-size: 12px;
   }
   .about-container {
@@ -555,6 +618,9 @@ ul {
     padding: 5% 0;
     border-radius: 5px;
   }
+  .details {
+    font-size: 14px;
+  }
   .btn-box a {
     width: 80%;
     margin: 0 auto;
@@ -565,7 +631,7 @@ ul {
   .about2 h3 {
     font-size: 13.5px;
   }
-  .about_box{
+  .about_box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -591,6 +657,19 @@ ul {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     gap: 2rem;
+  }
+  .contact-right {
+    flex-direction: column;
+  }
+
+  .contact-right table {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .contact-right th,
+  .contact-right td {
+    padding: 6px;
   }
 
   .section_title {
@@ -632,9 +711,14 @@ ul {
     gap: 2rem;
     align-items: center;
   }
+  .audio-container {
+    width: 90%;
+  }
+
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+
   }
   .contact-container {
     width: 90%;
@@ -652,9 +736,9 @@ ul {
     text-align: center;
     width: 100%;
   }
-.home-sci{
-  display: none;
-}
+  .home-sci {
+    display: none;
+  }
   .navbar a {
     padding: 5px;
     font-size: 16px;
@@ -684,18 +768,20 @@ ul {
     margin: 0 auto;
   }
   .home-sci {
-    width: 120px; 
-
+    width: 120px;
   }
   .home-sci a {
     width: 35px;
     height: 35px;
   }
-  .about_img{
+  .about_img {
     border-radius: 5px;
   }
-  .about_heading{
+  .about_heading {
     font-size: 10px;
+  }
+  .details {
+    font-size: 14px;
   }
   .about-title {
     font-size: 16px;
@@ -722,7 +808,30 @@ ul {
   .services_description {
     font-size: 14px;
   }
-  .home-sci{
+  .audio-container {
+    width: 90%;
+  }
+  .home-sci {
     display: none;
   }
+  .contact-right {
+    flex-direction: column;
+  }
+
+  .contact-right table {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .contact-right th,
+  .contact-right td {
+    padding: 4px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+    .footer-col{
+      width: 100%;
+    }
 }
