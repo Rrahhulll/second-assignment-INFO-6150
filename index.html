@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="">Rahul.</a>
+      <nav class="navbar">
+        <a class="active" href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, I'm Rahul Sharma</h1>
+        <h3>MERN Stack Developer</h3>
+        <p>
+          They say Knowledge is power, however the power is only effective when
+          it is being constructively used to solve a real world problem.
+        </p>
+        <div class="btn-box">
+          <a href="/assets/Rahulresume.pdf">My Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="home-sci">
+        <a href=""><i class="bx bxl-linkedin"></i></a>
+        <a href=""><i class="bx bxl-github"></i></a>
+        <a href=""><i class="bx bxl-sketch"></i></a>
+      </div>
+    </section>
+    <section class="aboutmain"  id="about">
+        <h1 class="about-title">Overview</h1>
+
+    <div class="about-section">
+        <div class="about1">
+            <img src="assets/about.jpeg" alt="" class="about_img" />
+        </div>
+        <div class="about2">
+            <div class="about_data">
+                <h3 class="about_heading">
+                  "The future that is driven by technology fuels my passion for making
+                  an original contribution in the domain and work towards the
+                  advancements that not only benefit the industry as a whole but also
+                  the common man. My undergraduate studies acquainted me with a vast
+                  range of subjects including Object-Oriented Programming, Relational
+                  Database Management Systems, and Cloud Computing that helped me
+                  learn in-depth about infrastructure support and the aspects of
+                  hardware, software, cloud computing, and storage."
+                </h3>
+                <div class="about_info">
+                  <div class="about_box">
+                    <i class="uil uil-award about_icon"></i>
+                    <h3 class="about_title">Experience</h3>
+                    <p class="about_subtitle">4 + Years</p>
+                  </div>
+      
+                  <div class="about_box">
+                    <i class="uil uil-suitcase-alt about_icon"></i>
+                    <h3 class="about_title">Completed</h3>
+                    <p class="about_subtitle">20 + projects</p>
+                  </div>
+      
+                  <div class="about_box">
+                    <i class="uil uil-headphones-alt about_icon"></i>
+                    <h3 class="about_title">Support</h3>
+                    <p class="about_subtitle">Online 24/7</p>
+                  </div>
+                </div>
+
+              </div>
+    </div>
+</section>
+<section class="services-section" id="services">
+    <h1 class="section_title">Services</h1>
+    <div class="videosec">
+        <video width="640" height="300" controls autoplay src="/assets/videcode.mp4"></video>
+    </div>
+    <div class="infosec">
+        <div class="services_content">
+            <h3 class="services_title">ReactJS Developer</h3>
+            <p class="services_description">I specialize in creating responsive user interfaces with HTML, CSS, and JavaScript frameworks, ensuring seamless user experiences across all devices.</p>
+        </div>
+        <div class="services_content">
+            <h3 class="services_title">MERN Stack Developer</h3>
+            <p class="services_description"> I build dynamic and scalable web applications using the MERN stack, focusing on seamless front-end integration, efficient back-end logic, and robust database management.
+            </p>
+        </div>
+        <div class="services_content">
+            <h3 class="services_title">Back End Developer</h3>
+            <p class="services_description">I provide scalable server-side solutions, and API development. Additionally, I ensure seamless optimization for performance across various platforms.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio-section" id="portfolio">
+    <div class="title">
+        <h2 class="section_title">Portfolio</h2>
+    </div>
+    <div class="portfolio-content">
+        <div class="services_content">
+            <h3 class="services_title">ReactJS Developer</h3>
+            <img src="/assets/carrent.jpeg" alt="">
+            <p class="services_description">I specialize in creating responsive user interfaces with HTML, CSS, and JavaScript frameworks.</p>
+        </div>
+        <div class="services_content">
+            <h3 class="services_title">MERN Stack Developer</h3>
+            <img src="/assets/tripguide.jpeg" alt="">
+            <p class="services_description"> I build dynamic and scalable web applications using the MERN(MongoDB, ExpressJS, ReactJS, NodeJS) stack.
+            </p>
+        </div>
+        <div class="services_content">
+            <h3 class="services_title">Back End Developer</h3>
+            <img src="/assets/jobit.jpeg" alt="">
+            <p class="services_description">I provide scalable server-side solutions, database integration, and API development using back-end development</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-container" id="contact">
+    <div class="wrapper">
+        <h1 class="section-title">Get in touch</h1>
+        <!-- <div class="contact-container"> -->
+        <div class="contact-left">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="6548edd5-3cc6-4bf1-a15d-5ff5ccb0539e"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="contact-inputs"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="contact-inputs"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <div class="contact-info">
+              <a class="tel1" href="+8574523573"><strong class="tel">Phone:</strong> +857 452 3573</a>
+              <p>
+                <strong class="tel">Email:</strong>
+                <a class="tel1" href="mailto:sharma.rahul1@northeastern.edu"
+                  >sharma.rahul1@northeastern.edu</a
+                >
+              </p>
+            </div>
+            <button class="submit" type="submit">
+              Submit <img src="/assets/arrow_icon.png" alt="submit button" />
+            </button>
+          </form>
+        </div>
+      <!-- </div> -->
+     
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Home</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Portfolio</h4>
+            <ul>
+              <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
