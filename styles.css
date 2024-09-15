@@ -59,11 +59,18 @@ body {
 .navbar a.active {
   color: #00abf0;
 }
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .home {
   display: flex;
   align-items: center;
-  height: 100vh;
   padding: 0 10%;
+  margin: 5% auto;
 }
 .home-content {
   max-width: 600px;
@@ -136,8 +143,6 @@ body {
   width: 100%;
 }
 .home-sci {
-  position: absolute;
-  bottom: 40px;
   width: 170px;
   display: flex;
   justify-content: space-between;
@@ -516,7 +521,6 @@ ul {
   }
   .home-sci {
     width: 150px; 
-    bottom: 80px; 
   }
   .about_heading{
     font-size: 12px;
@@ -670,7 +674,6 @@ ul {
   }
   .home-sci {
     width: 120px; 
-    bottom: 20px; 
 
   }
   .home-sci a {
