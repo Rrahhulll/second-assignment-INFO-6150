@@ -501,7 +501,8 @@ ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 74vh;
+    margin: 0% auto;
+
   }
 
   .home-content h1 {
@@ -655,7 +656,7 @@ ul {
   }
 
   .home-content h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .home-content h3 {
