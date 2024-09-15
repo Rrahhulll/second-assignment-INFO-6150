@@ -475,7 +475,7 @@ ul {
   .header {
     position: relative;
     flex-direction: column;
-    padding: 0px 10%;
+
   }
 
   .navbar {
@@ -483,6 +483,7 @@ ul {
     flex-direction: column;
     width: 100%;
     text-align: center;
+
   }
 
   .navbar a {
@@ -495,8 +496,11 @@ ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 0% auto;
-
+    height: 65vh;
+  }
+  .home-sci
+  {
+    display: none;
   }
 
   .home-content h1 {
