@@ -312,7 +312,7 @@ body {
   flex: 1;
   max-width: 1000px;
   padding: 20px;
-  height: 100vh;
+  /* height: 70vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,7 +513,7 @@ ul {
     gap: 10px;
   }
   .home-sci {
-    bottom: 1px;
+    bottom: 40px;
   }
   .about_heading{
     font-size: 12px;
@@ -666,11 +666,6 @@ ul {
     margin: 0 auto;
   }
   .home-sci {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    left: 0;
-    right: 0;
     bottom: 60px;
   }
   .home-sci a {
