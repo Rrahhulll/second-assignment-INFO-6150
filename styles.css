@@ -723,6 +723,9 @@ ul {
   .contact-container {
     width: 90%;
   }
+  .home-sci {
+    display: none;
+  }
 }
 
 @media (max-width: 365px) {
