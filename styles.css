@@ -235,6 +235,7 @@ body {
 }
 
 .services-section {
+  margin: 3% auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -299,6 +300,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 3% auto;
 }
 
 .portfolio-content {
@@ -513,7 +515,8 @@ ul {
     gap: 10px;
   }
   .home-sci {
-    bottom: 40px;
+    width: 150px; 
+    bottom: 30px; 
   }
   .about_heading{
     font-size: 12px;
@@ -666,7 +669,9 @@ ul {
     margin: 0 auto;
   }
   .home-sci {
-    bottom: 60px;
+    width: 120px; 
+    bottom: 20px; 
+
   }
   .home-sci a {
     width: 35px;
